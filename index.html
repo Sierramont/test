@@ -1,0 +1,46 @@
+<form action="https://docs.google.com/forms/d/e/1FAIpQLSfpOmTB9FM_7iEaLZ6cP_QiXULnrOnkJwJa5yx4pOmmU0jn7Q/formResponse"
+      target="_self"
+      id="bootstrapForm"
+      method="POST">
+    <fieldset>
+        <h2>Game Survey<br><small></small></h2>
+    </fieldset>
+
+
+    <!-- Field type: "choices" id: "436970683" -->
+    <fieldset>
+        <legend for="436970683">What games do you like the most?</legend>
+        <div class="form-group">
+            <div class="radio">
+                <label>
+                    <input type="radio" name="entry.464191887" value="ROBLOX" >
+                    ROBLOX
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="entry.464191887" value="Fortnite" >
+                    Fortnite
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="entry.464191887" value="__other_option__" >
+                </label>
+                <input type="text" name="entry.464191887.other_option_response" placeholder="custom value">
+            </div>
+        </div>
+    </fieldset>
+
+    <input type="hidden" name="fvv" value="1">
+    <input type="hidden" name="fbzx" value="-6223748865372875133">
+    <!--
+        CAVEAT: In multipages (multisection) forms, *pageHistory* field tells to google what sections we've currently completed.
+        This usually starts as "0" for the first page, then "0,1" in the second page... up to "0,1,2..N" in n-th page.
+        Keep this in mind if you plan to change this code to recreate any sort of multipage-feature in your exported form.
+        We're setting this to the total number of pages in this form because we're sending all fields from all the section together.
+    -->
+    <input type="hidden" name="pageHistory" value="0">
+
+    <input class="btn btn-primary" type="submit" value="Submit">
+</form>
